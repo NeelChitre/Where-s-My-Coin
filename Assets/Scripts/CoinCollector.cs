@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CoinCollector : MonoBehaviour
 {
+    public TMP_Text coinCounter;
     int coins;
     void Start()
     {
@@ -16,7 +19,8 @@ public class CoinCollector : MonoBehaviour
         {
             coins+=1;
             other.gameObject.SetActive(false);
-            Debug.Log(coins);
+            string coinCount = coins.ToString();
+            coinCounter.text = coinCount;
         }
     }
 }

@@ -12,15 +12,9 @@ public class Timer : MonoBehaviour
     public TMP_Text popMessage;
     public GameObject finisher;
     float startTime;
+    [HideInInspector] public static float t;
     bool starting = false;
     bool message = false;
-
-
-    
-    void Start()
-    {
-
-    }
     
     void OnTriggerEnter(Collider other) 
     {
@@ -65,7 +59,7 @@ public class Timer : MonoBehaviour
 
         if (starting) 
         {
-            float t = Time.time - startTime;
+            t = Time.time - startTime;
 
             string minutes = ((int) t / 60).ToString();
             string seconds = (t % 60).ToString("f2");

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] ParticleSystem winEffect;
@@ -12,7 +13,6 @@ public class Timer : MonoBehaviour
     public GameObject finisher;
     float startTime;
     bool starting = false;
-    IEnumerator coroutine;
     bool message = false;
 
 
@@ -39,6 +39,7 @@ public class Timer : MonoBehaviour
                 other.gameObject.SetActive(false);
                 winEffect.Play();
                 starting = false;
+                Invoke("EndMenu", 2f);
             }
         }
         if (other.gameObject.tag == "Finisher")
@@ -55,7 +56,6 @@ public class Timer : MonoBehaviour
         if (message)
         {
             popMessage.gameObject.SetActive(true);
-            coroutine = WaitAndDisappear(2.0f);
 
         }
         else
@@ -73,9 +73,9 @@ public class Timer : MonoBehaviour
             timerText.text = minutes + ":" + seconds;
         }   
     }
-
-    IEnumerator WaitAndDisappear(float waitTime)
+    
+    void EndMenu()
     {
-        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(2);
     }
 }

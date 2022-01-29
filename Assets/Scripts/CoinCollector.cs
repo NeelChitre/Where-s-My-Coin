@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CoinCollector : MonoBehaviour
 {
-    [SerializeField] ParticleSystem winEffect;
     int coins;
     void Start()
     {
@@ -18,12 +17,6 @@ public class CoinCollector : MonoBehaviour
             coins+=1;
             other.gameObject.SetActive(false);
             Debug.Log(coins);
-        }
-        if (other.gameObject.tag == "Finish")
-        {
-            other.gameObject.SetActive(false);
-            winEffect.Play();
-
         }
     }
 }

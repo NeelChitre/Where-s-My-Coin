@@ -14,4 +14,9 @@ public class EndGame : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void HardPlay()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

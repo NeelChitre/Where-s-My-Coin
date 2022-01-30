@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637788797779382773
-    m_Hash: 2169586406
+      ticks: 637791363255004083
+    m_Hash: 2892192230
   m_LockFileStatus:
     m_FilePath: A:/Unity/TPP/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637788797779385550
-    m_Hash: 884278900
+      ticks: 637791363255044084
+    m_Hash: 2737325012
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -233,10 +233,12 @@ m_PackageAssets:
         - 1.14.4
         - 1.14.7
         - 1.14.9
+        - 1.14.12
         - 1.15.1
         - 1.15.4
         - 1.15.7
         - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -250,6 +252,7 @@ m_PackageAssets:
         compatible:
         - 1.15.7
         - 1.15.9
+        - 1.15.12
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -260,7 +263,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.9
+        verified: 1.15.12
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
@@ -356,6 +359,7 @@ m_PackageAssets:
         - 3.0.7
         - 3.0.9
         - 3.0.10
+        - 3.0.12
         compatible:
         - 1.0.2
         - 1.0.6
@@ -384,6 +388,7 @@ m_PackageAssets:
         - 3.0.7
         - 3.0.9
         - 3.0.10
+        - 3.0.12
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -709,6 +714,97 @@ m_PackageAssets:
         type: git
         url: https://github.com/Unity-Technologies/InputSystem.git
         revision: 0343e557f75946cf6fad4be48dd10276d535f490
+        path: 
+    - packageId: com.unity.postprocessing@3.2.0
+      testable: 0
+      isDirectDependency: 1
+      version: 3.2.0
+      source: 1
+      resolvedPath: A:\Unity\TPP\Library\PackageCache\com.unity.postprocessing@3.2.0
+      assetPath: Packages/com.unity.postprocessing
+      name: com.unity.postprocessing
+      displayName: Post Processing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The post-processing stack (v2) comes with a collection of effects
+        and image filters you can apply to your cameras to improve the visuals of
+        your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.7
+        - 0.1.8
+        - 2.0.0-beta
+        - 2.0.1-beta
+        - 2.0.2-preview
+        - 2.0.3-preview
+        - 2.0.5-preview
+        - 2.0.7-preview
+        - 2.0.8-preview
+        - 2.0.9-preview
+        - 2.0.10-preview
+        - 2.0.11-preview
+        - 2.0.12-preview
+        - 2.0.13-preview
+        - 2.0.14-preview
+        - 2.0.15-preview
+        - 2.0.16-preview
+        - 2.0.17-preview
+        - 2.1.0
+        - 2.1.1
+        - 2.1.2
+        - 2.1.3
+        - 2.1.4
+        - 2.1.5
+        - 2.1.6
+        - 2.1.7
+        - 2.2.1
+        - 2.2.2
+        - 2.3.0
+        - 3.0.1
+        - 3.0.3
+        - 3.1.0
+        - 3.1.1
+        - 3.2.0
+        compatible:
+        - 2.3.0
+        - 3.0.1
+        - 3.0.3
+        - 3.1.0
+        - 3.1.1
+        - 3.2.0
+        verified: 3.2.0
+      dependencies:
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637726687760000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/Unity-Technologies/Graphics.git
+        revision: b0e3273299e678bccb11e08d28c49d481c731c7e
         path: 
     - packageId: com.unity.render-pipelines.universal@10.8.1
       testable: 0
@@ -1179,7 +1275,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1203,7 +1301,9 @@ m_PackageAssets:
         - 1.6.1
         - 1.6.2
         - 1.6.3
+        - 1.6.4
         - 1.7.0-pre.1
+        - 1.7.0-pre.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director

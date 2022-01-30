@@ -27,15 +27,15 @@ public class Audio : MonoBehaviour
         musicVolume = volume;
     }
 
-    /*public void MuteAudio(bool muted)
+    public void MuteAudio(bool muted)
     {
         if (muted)
         {
-            AudioListner.volume = 0;
+            musicVolume = 0;
         }
         else
         {
-            AudioListner.volume = 1;
+            musicVolume = 1;
         }
-    }*/
+    }
 }

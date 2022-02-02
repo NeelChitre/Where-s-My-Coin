@@ -15,7 +15,14 @@ public class Timer : MonoBehaviour
     [HideInInspector] public static float t;
     bool starting = false;
     bool message = false;
+    [SerializeField] AudioClip success;
+    AudioSource AS;
     
+    void Start() 
+    {
+        AS = GetComponent<AudioSource>();
+    }
+
     void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.tag == "Start")
@@ -32,6 +39,7 @@ public class Timer : MonoBehaviour
                 finisher.SetActive(false);
                 other.gameObject.SetActive(false);
                 winEffect.Play();
+                AS.PlayOneShot(success);
                 starting = false;
                 Invoke("EndMenu", 2f);
             }

@@ -7,6 +7,7 @@ using TMPro;
 public class CoinCollector : MonoBehaviour
 {
     public TMP_Text coinCounter;
+    [SerializeField] ParticleSystem coinEffect;
     int coins;
     void Start()
     {
@@ -21,6 +22,7 @@ public class CoinCollector : MonoBehaviour
             other.gameObject.SetActive(false);
             string coinCount = coins.ToString();
             coinCounter.text = coinCount;
+            coinEffect.Play();
         }
     }
 }

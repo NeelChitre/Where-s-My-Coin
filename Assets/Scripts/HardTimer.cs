@@ -15,9 +15,13 @@ public class HardTimer : MonoBehaviour
     [HideInInspector] public static float t;
     bool starting = false;
     bool message = false;
+    [SerializeField] AudioClip success;
+    AudioSource AS;
+
     void Start() 
     {
         t = 420;
+        AS = GetComponent<AudioSource>();
     }
     
     void OnTriggerEnter(Collider other) 
@@ -36,6 +40,7 @@ public class HardTimer : MonoBehaviour
                 finisher.SetActive(false);
                 other.gameObject.SetActive(false);
                 winEffect.Play();
+                AS.PlayOneShot(success);
                 starting = false;
                 Invoke("EndMenu", 2f);
             }

@@ -1,6 +1,6 @@
 # Where's The Coin?
 
-<img src = "https://github.com/NeelChitre/Where-s-My-Coin/blob/master/Where's%20My%20Coin_%2010-05-2022%2021_08_43.png?raw=true" />
+![WMC Home](https://github.com/user-attachments/assets/ec491546-731d-4949-8a62-21d86d151385)
 
 ## _Overview_
 
@@ -8,7 +8,7 @@
 - The basic task of the game is to find out several coins scattered around the city and use logical and problem solving approach to collect the coins and finish the levels within the given time limit.
 - It has 2 modes, in the first one you have no restriction to the time u get but you still have to post the best possible time to achieve a highscore. In the second mode, you have a certain time limit which you need to beat in order to win the game.
 
-<img src = "https://github.com/NeelChitre/Where-s-My-Coin/blob/master/Where's%20My%20Coin%20-%20EasyMode%20-%20PC,%20Mac%20&%20Linux%20Standalone%20-%20Unity%202020.3.26f1%20Personal%20_DX11_%2010-05-2022%2021_26_48%20(2).png?raw=true" />
+![WMC Pic2](https://github.com/user-attachments/assets/7d683499-478f-433f-8d2c-365b30b79ac9)
 
 ## _Technologies and Languages used_
 
